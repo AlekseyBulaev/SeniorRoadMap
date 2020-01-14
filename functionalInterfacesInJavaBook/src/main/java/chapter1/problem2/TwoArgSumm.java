@@ -1,7 +1,5 @@
 package chapter1.problem2;
 
-import org.w3c.dom.ls.LSOutput;
-
 public class TwoArgSumm {
 
     public static void main(String[] args) {
@@ -15,7 +13,7 @@ public class TwoArgSumm {
         Summer<Double> doubleSum = new Summer<Double>() {
             @Override
             public Double sum(Double arg1, Double arg2) {
-                return  arg1 + arg2;
+                return arg1 + arg2;
             }
         };
 

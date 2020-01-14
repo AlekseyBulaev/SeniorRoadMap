@@ -1,21 +1,28 @@
 package chapter1.problem1;
 
-import java.io.DataInputStream;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 
 public class StreamImplementation {
     public static void main(String[] args) {
+
         InputStreamOpener dataInputStream = new InputStreamOpener() {
             @Override
-            public InputStream open(String arg) {
+            public InputStream open(String arg) throws FileNotFoundException {
+                return new DataInputStream(new FileInputStream(arg));
+            }
+        };
 
-                return new DataInputStream(new InputStream() {
-                    @Override
-                    public int read() throws IOException {
-                        return 0;
-                    }
-                });
+        InputStreamOpener objectInputStream = new InputStreamOpener() {
+            @Override
+            public InputStream open(String arg) throws IOException {
+                return new ObjectInputStream(new FileInputStream(arg));
+            }
+        };
+
+        InputStreamOpener bufferedInputStream = new InputStreamOpener() {
+            @Override
+            public InputStream open(String arg) throws IOException {
+                return new BufferedInputStream(new FileInputStream(arg));
             }
         };
     }

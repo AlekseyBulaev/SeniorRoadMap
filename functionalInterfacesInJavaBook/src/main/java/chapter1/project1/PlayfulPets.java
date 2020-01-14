@@ -2,7 +2,6 @@ package chapter1.project1;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class PlayfulPets {
 
@@ -44,9 +43,10 @@ public class PlayfulPets {
                 }
                 return list;
             }
+
             @Override
             public Pet first(Pet pet) {
-                for(Pet p : Pet.pets)
+                for (Pet p : Pet.pets)
                     if (p.price <= pet.price)
                         return p;
                 return null;
