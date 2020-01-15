@@ -1,0 +1,20 @@
+Write a functional interface named ListManipulator that is
+generic for type T. Its functional method, named manipulate,
+accepts a List<T> and a T as arguments and returns void.
+ListManipulator has a default method named create that creates
+an ArrayList<T>. The default method takes no arguments and
+returns a List<T>.
+Write three implementations of ListManipulator:
+– – sListAdd which implements ListManipulator<String> and
+whose functional method adds an element of type T to the end
+of the list
+– – iListAdd which implements ListManipulator<Integer> and
+whose functional method adds an element of type T to the end
+of the list
+– – iListRmv which implements ListManipulator<Integer> and
+whose functional method removes the first occurrence of an
+element of type T from the list
+Implementations iListAdd and iListRmv override default
+method create with an implementation that sets the initial
+ArrayList capacity to 50 elements.
+Demonstrate the three implementations in a main program.
