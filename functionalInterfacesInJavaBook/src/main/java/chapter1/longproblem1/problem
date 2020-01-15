@@ -1,0 +1,10 @@
+Write a functional interface named ToString that is generic for
+type T. Its functional method, named convert, converts a T to a
+String.
+Write two implementations of ToString:
+– – l2s which converts a List<String> by creating a comma-
+separated string
+– – m2s which converts a Map<String,Integer> by creating a
+comma-­separated field for each map entry with a colon
+between the key and the value
+Demonstrate the two implementations in a main program.
