@@ -1,0 +1,3 @@
+Write a functional interface named Area, and use it to compute
+the area of a circle, a rectangle, and an isosceles right triangle.
+Include a numberOfSides method that by default returns 4.
