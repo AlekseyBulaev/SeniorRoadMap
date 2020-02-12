@@ -1,0 +1,5 @@
+Write a function interface named SumFromZero whose
+functional method accepts a single argument and
+returns the sum of all numbers from zero up to and
+including the argument. Implement SumFromZero using
+a lambda expression.
