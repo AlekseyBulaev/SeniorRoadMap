@@ -7,6 +7,4 @@ public class ComputeSquare extends JFrame {
     JTextField square;
     JButton submit;
     JPanel panel;
-    public ComputeSquare()
-    {
 }
