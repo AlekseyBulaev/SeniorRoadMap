@@ -1,0 +1,4 @@
+Write a predicate that implements the following logical expression.
+Demonstrate in a main program.
+
+NOT(x < 100 or x is odd) AND x > 20
