@@ -1,0 +1,4 @@
+Using the BiPredicate interface, implement the following logical expression
+and demonstrate in a main program:
+
+NOT (x > 2 AND y < x)

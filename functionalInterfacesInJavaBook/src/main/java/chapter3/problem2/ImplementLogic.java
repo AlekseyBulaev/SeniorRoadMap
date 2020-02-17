@@ -1,7 +1,5 @@
 package chapter3.problem2;
 
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
-
 import java.util.function.Predicate;
 
 public class ImplementLogic {
