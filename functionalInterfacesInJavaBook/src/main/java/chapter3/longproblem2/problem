@@ -1,0 +1,11 @@
+The Internal Revenue Service defines your dependent as someone who meets
+all of the following conditions with relation to you:
+    * Is your son, daughter, stepchild, or foster child
+    * Is under age 19 and younger than you, or is a student under 24 and
+    and younger than you, or is permanently disabled
+    * Did not provide over half of his or her support
+    * Did not file a joint tax return or field or joint return only to claim
+    a refund
+    * Lived with you for more than half a year
+
+Using a single chain of predicates, determine is your child dependent or not

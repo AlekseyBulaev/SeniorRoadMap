@@ -1,0 +1,6 @@
+A playing card consists of a face value (2 - A) and a suite (h, c, s, d). A poker hand consists of
+five playing cards.
+Write predicate to determine if a poker hand is any of the following:
+    * A straight
+    * A flush
+    * A full house
