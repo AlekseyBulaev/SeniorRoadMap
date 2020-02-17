@@ -1,0 +1,3 @@
+Using a single chain of predicates, determine if a five-letter word
+is a palindrome or not. A palindrome is a word that spelled th same
+backward and forward. For example, "kayak" is a palindrome, while "apple" is not
