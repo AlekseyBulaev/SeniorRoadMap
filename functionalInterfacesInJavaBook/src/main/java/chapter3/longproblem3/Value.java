@@ -3,34 +3,38 @@ package chapter3.longproblem3;
 import java.util.Arrays;
 
 public enum Value {
-    NONE(-1),
-    TWO(0),
-    THREE(1),
-    FOUR(2),
-    FIFE(3),
-    SIX(4),
-    SEVEN(5),
-    EIGHT(6),
-    NINE(7),
-    TEN(8),
-    JACK(9),
-    QUEEN(10),
-    KING(11),
-    ACE(12);
+    NONE("none"),
+    TWO("2"),
+    THREE("3"),
+    FOUR("4"),
+    FIFE("5"),
+    SIX("6"),
+    SEVEN("7"),
+    EIGHT("8"),
+    NINE("9"),
+    TEN("T"),
+    JACK("J"),
+    QUEEN("Q"),
+    KING("K"),
+    ACE("A");
 
-    private int index;
+    private String value;
 
-    Value(int index) {
-        this.index = index;
+    Value(String value) {
+        this.value = value;
     }
 
-    private int getIndex() {
-        return index;
+    public String getValue() {
+        return value;
     }
 
-    public static Value getValue(int index) {
+    public static Value getbyOrdinal(int arg) {
+        return Arrays.stream(Value.values()).filter(x-> x.ordinal()==arg).findFirst().orElse(Value.NONE);
+    }
+
+    public static Value getValue(String value) {
         return Arrays.stream(Value.values())
-                .filter(x -> x.getIndex() == index)
+                .filter(x -> x.getValue().equals(value))
                 .findFirst()
                 .orElse(Value.NONE);
     }

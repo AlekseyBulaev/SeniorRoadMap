@@ -1,35 +1,34 @@
 package chapter3.longproblem3;
 
-import java.util.Objects;
+import java.util.HashSet;
+import java.util.Random;
+import java.util.Set;
 
 public class Hand {
-    private Value value;
-    private Suite suite;
+    private Set<Card> hand;
 
-    public Hand(int value, int suite) {
-        this.value = Value.getValue(value);
-        this.suite = Suite.getSuite(suite);
+    public Hand() {
+        this.hand = generate();
+    }
+
+    private Set<Card> generate() {
+        Set<Card> cards = new HashSet<>();
+        while(cards.size()<5) {
+            cards.add(new Card(new Random().nextInt(12), new Random().nextInt(4)));
+        }
+        return cards;
+    }
+
+    public Set<Card> getHand() {
+        return hand;
     }
 
     @Override
     public String toString() {
-        return "Hand{" +
-                "value=" + value +
-                ", suite=" + suite +
-                '}';
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Hand hand = (Hand) o;
-        return value == hand.value &&
-                suite == hand.suite;
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(value, suite);
+        StringBuilder result = new StringBuilder();
+        hand.forEach(x -> {
+            result.append(x.getValue().getValue()).append(x.getSuite().getValue());
+        });
+        return result.toString();
     }
 }

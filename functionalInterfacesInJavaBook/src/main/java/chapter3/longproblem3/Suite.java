@@ -3,25 +3,29 @@ package chapter3.longproblem3;
 import java.util.Arrays;
 
 public enum Suite {
-    NONE(-1),
-    CLUB(0),
-    HEART(1),
-    SPADE(2),
-    DIAMOND(3);
+    NONE("none"),
+    CLUB("c"),
+    HEART("h"),
+    SPADE("s"),
+    DIAMOND("d");
 
-    private int index;
+    private String value;
 
-    Suite(int index) {
-        this.index = index;
+    Suite(String value) {
+        this.value = value;
     }
 
-    private int getIndex() {
-        return index;
+    public String getValue() {
+        return value;
     }
 
-    public static Suite getSuite(int index) {
+    public static Suite getbyOrdinal(int arg) {
+        return Arrays.stream(Suite.values()).filter(x-> x.ordinal()==arg).findFirst().orElse(Suite.NONE);
+    }
+
+    public static Suite getSuite(String value) {
         return Arrays.stream(Suite.values())
-                .filter(x -> x.getIndex() == index)
+                .filter(x -> x.getValue().equals(value))
                 .findFirst()
                 .orElse(Suite.NONE);
     }
