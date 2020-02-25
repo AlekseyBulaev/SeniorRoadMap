@@ -5,10 +5,10 @@ import java.util.Random;
 import java.util.Set;
 
 public class Hand {
-    private Set<Card> hand;
+    private Set<Card> cards;
 
     public Hand() {
-        this.hand = generate();
+        this.cards = generate();
     }
 
     private Set<Card> generate() {
@@ -19,14 +19,14 @@ public class Hand {
         return cards;
     }
 
-    public Set<Card> getHand() {
-        return hand;
+    public Set<Card> getCards() {
+        return cards;
     }
 
     @Override
     public String toString() {
         StringBuilder result = new StringBuilder();
-        hand.forEach(x -> {
+        cards.forEach(x -> {
             result.append(x.getValue().getValue()).append(x.getSuite().getValue());
         });
         return result.toString();
