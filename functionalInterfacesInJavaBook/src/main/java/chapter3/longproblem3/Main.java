@@ -43,7 +43,7 @@ public class Main {
                 count.getAndIncrement();
             }
         });
-        return values.size() == 2 && count.get() <= 3;
+        return values.size() == 2 && count.get() <= 3 && count.get() >= 2;
     };
 
     public static void main(String[] args) {
