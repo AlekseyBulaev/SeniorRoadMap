@@ -1,4 +1,4 @@
-package chapter4;
+package chapter4.problem1;
 
 public class A {
     Double d;

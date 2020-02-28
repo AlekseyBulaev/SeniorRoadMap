@@ -1,10 +1,10 @@
-package chapter4;
+package chapter4.problem1;
 
 import java.util.function.Function;
 
 public class Main {
 
-    public static Function<A, B> fromAtoB = a -> new B(a.d, a.s, "" + a.i);
+    public static Function<A, B> fromAtoB = a -> new B(a.d,a.s, "" + a.i);
 
     public static Function<B, A> fromBtoA = b -> new A(b.a, b.b, Integer.parseInt(b.c));
 

@@ -1,0 +1,5 @@
+Class D and E are subclasses of class C.
+Write a method named execute that accepts C,D and E
+and a function which converts the object to an Integer
+containing the sub of the object's fields.
+The execute method returns the sum to a main method, which prints it.
