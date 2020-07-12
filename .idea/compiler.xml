@@ -6,19 +6,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="itvdn-spring" />
-        <module name="functionalInterfacesInJavaBook" />
         <module name="leetcode" />
-        <module name="EffectiveJava3rd" />
         <module name="functionalInterfaceInJava" />
+        <module name="itvdn-spring" />
+        <module name="EffectiveJava3rd" />
+        <module name="stepik_webJava" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="EffectiveJava3rd" target="14" />
       <module name="functionalInterfaceInJava" target="14" />
-      <module name="functionalInterfacesInJavaBook" target="8" />
+      <module name="functionalInterfacesInJavaBook" target="14" />
       <module name="itvdn-spring" target="14" />
-      <module name="leetcode" target="1.5" />
+      <module name="leetcode" target="14" />
       <module name="stepik_webJava" target="14" />
     </bytecodeTargetLevel>
   </component>

@@ -7,7 +7,8 @@
       <module fileurl="file://$PROJECT_DIR$/root/functionalInterfaceInJava/functionalInterfaceInJava.iml" filepath="$PROJECT_DIR$/root/functionalInterfaceInJava/functionalInterfaceInJava.iml" />
       <module fileurl="file://$PROJECT_DIR$/root/functionalInterfacesInJavaBook.iml" filepath="$PROJECT_DIR$/root/functionalInterfacesInJavaBook.iml" />
       <module fileurl="file://$PROJECT_DIR$/root/itvdn-spring/itvdn-spring.iml" filepath="$PROJECT_DIR$/root/itvdn-spring/itvdn-spring.iml" />
-      <module fileurl="file://$PROJECT_DIR$/leetcode/leetcode.iml" filepath="$PROJECT_DIR$/leetcode/leetcode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/root/leetcode/leetcode.iml" filepath="$PROJECT_DIR$/root/leetcode/leetcode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/root/stepik_webJava/stepik_webJava.iml" filepath="$PROJECT_DIR$/root/stepik_webJava/stepik_webJava.iml" />
     </modules>
   </component>
 </project>
