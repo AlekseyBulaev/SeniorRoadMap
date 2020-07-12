@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="itvdn-spring" />
+        <module name="functionalInterfacesInJavaBook" />
+        <module name="leetcode" />
+        <module name="EffectiveJava3rd" />
+        <module name="functionalInterfaceInJava" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="EffectiveJava3rd" target="14" />
+      <module name="functionalInterfaceInJava" target="14" />
+      <module name="functionalInterfacesInJavaBook" target="8" />
+      <module name="itvdn-spring" target="14" />
+      <module name="leetcode" target="1.5" />
+      <module name="stepik_webJava" target="14" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
