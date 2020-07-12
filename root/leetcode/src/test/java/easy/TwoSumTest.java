@@ -13,11 +13,11 @@ import static org.junit.runners.Parameterized.*;
 
 @RunWith(Parameterized.class)
 public class TwoSumTest {
-    private Integer[] arr;
-    private Integer[] target;
-    private Integer[] result;
+    private int[] arr;
+    private int[] target;
+    private int[] result;
 
-    public TwoSumTest(Integer[] arr, Integer[] target, Integer[] result) {
+    public TwoSumTest(int[] arr, int[] target, int[] result) {
         this.arr = arr;
         this.target = target;
         this.result = result;
