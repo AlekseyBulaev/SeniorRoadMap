@@ -3,7 +3,7 @@ package easy;
 public class ReverseInteger {
     public static int reverse(int x) {
         long result = 0;
-        for (; x != 0; ) {
+        while (x != 0) {
             result = x % 10 + result * 10;
             x /= 10;
         }
